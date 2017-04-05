@@ -15,6 +15,7 @@
 		C69348731DC7656E00284529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69348711DC7656E00284529 /* LaunchScreen.storyboard */; };
 		C69EF4701DC76CCD00A7808E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EF46E1DC76CCD00A7808E /* Realm.framework */; };
 		C69EF4711DC76CCD00A7808E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69EF46F1DC76CCD00A7808E /* RealmSwift.framework */; };
+		C6B7033D1E9538EB00CE24CA /* EncDecEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B7033C1E9538EB00CE24CA /* EncDecEngine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		C69348741DC7656E00284529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69EF46E1DC76CCD00A7808E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Release-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
 		C69EF46F1DC76CCD00A7808E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		C6B7033C1E9538EB00CE24CA /* EncDecEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncDecEngine.swift; sourceTree = "<group>"; };
 		C6C510391DC775FF0047F6BE /* EncryptionTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EncryptionTest.entitlements; sourceTree = "<group>"; };
 		C86A03D8E23180C898427500 /* Pods-EncryptionTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptionTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptionTest/Pods-EncryptionTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +73,7 @@
 				C6C510391DC775FF0047F6BE /* EncryptionTest.entitlements */,
 				C69348681DC7656E00284529 /* AppDelegate.swift */,
 				C693486A1DC7656E00284529 /* ViewController.swift */,
+				C6B7033C1E9538EB00CE24CA /* EncDecEngine.swift */,
 				C693486C1DC7656E00284529 /* Main.storyboard */,
 				C693486F1DC7656E00284529 /* Assets.xcassets */,
 				C69348711DC7656E00284529 /* LaunchScreen.storyboard */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B7033D1E9538EB00CE24CA /* EncDecEngine.swift in Sources */,
 				C693486B1DC7656E00284529 /* ViewController.swift in Sources */,
 				C69348691DC7656E00284529 /* AppDelegate.swift in Sources */,
 			);
