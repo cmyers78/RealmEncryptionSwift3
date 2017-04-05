@@ -17,32 +17,37 @@ import Security
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var decryptLabel: UILabel!
+    
     let encDec = EncDecEngine()
     
-    let textView = UITextView(frame: UIScreen.main.bounds)
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Testing encryption")
-        encDec.encrypt(with: "In the valley of Death rode the 600")
+        encDec.encrypt(with: "Franks and Beans")
+        
+        print("Item encrypted")
+        autoreleasepool {
+            if let dec = encDec.decrypt() {
+                decryptLabel?.text = (dec)
+            }
+        }
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func loadView() {
-        super.loadView()
-        view.addSubview(textView)
-    }
+
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        autoreleasepool {
+            encDec.encrypt(with: "I hate rude behvaior in a man. Won't tolerate it.")
+        }
         
-        
-        print("Item encrypted")
-        // Use an autorelease pool to close the Realm at the end of the block, so
-        // that we can try to reopen it with different keys
-        let dec = encDec.decrypt()
-        
-        textView.text = dec
+        performSegue(withIdentifier: "secondVC", sender: nil)
     }
 }
 

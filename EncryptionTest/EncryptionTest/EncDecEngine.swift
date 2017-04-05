@@ -26,7 +26,15 @@ class EncDecEngine {
         }
     }
     
-    func decrypt() -> String {
+    func decryptedList() -> Results<EncryptionObject> {
+        
+        let config = Realm.Configuration(encryptionKey: getKey())
+        let realm = try! Realm(configuration: config)
+        
+        return realm.objects(EncryptionObject.self)
+    }
+    
+    func decrypt() -> String? {
             let configuration = Realm.Configuration(encryptionKey: getKey())
             let realm = try! Realm(configuration: configuration)
             if let stringProp = realm.objects(EncryptionObject.self).last?.stringProperty {
