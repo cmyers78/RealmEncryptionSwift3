@@ -72,9 +72,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28M-64-vQf">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTwoTapped:" destination="W7P-n6-hOl" eventType="touchUpInside" id="0SZ-1f-I8H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="28M-64-vQf" firstAttribute="centerX" secondItem="yOI-ef-5DO" secondAttribute="centerX" id="3lg-Sx-SYz"/>
+                            <constraint firstItem="28M-64-vQf" firstAttribute="centerY" secondItem="yOI-ef-5DO" secondAttribute="centerY" id="CIQ-Ro-xAW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tI8-X8-vEK" secondAttribute="trailing" constant="20" id="ZMY-PF-Lh9"/>
                             <constraint firstItem="tI8-X8-vEK" firstAttribute="top" secondItem="dLg-wK-I92" secondAttribute="bottom" constant="60" id="eA1-mr-7PY"/>
                             <constraint firstItem="tI8-X8-vEK" firstAttribute="leading" secondItem="yOI-ef-5DO" secondAttribute="leadingMargin" constant="20" id="wwF-1M-vAF"/>
@@ -82,11 +91,46 @@
                     </view>
                     <connections>
                         <outlet property="decrypted2Label" destination="tI8-X8-vEK" id="4H2-qH-x12"/>
+                        <segue destination="m6b-jd-VWg" kind="show" identifier="thirdVC" id="HXX-pg-Ejo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EgP-Cr-f0X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1908" y="194.75262368815595"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="OCW-Io-cHR">
+            <objects>
+                <viewController id="m6b-jd-VWg" customClass="ThirdViewController" customModule="EncryptionTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="INv-HQ-CM4"/>
+                        <viewControllerLayoutGuide type="bottom" id="NEw-kZ-NJR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LyT-TN-l6f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qP0-pU-qeL">
+                                <rect key="frame" x="36" y="114" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qP0-pU-qeL" secondAttribute="trailing" constant="20" id="9Ju-HX-5Kz"/>
+                            <constraint firstItem="qP0-pU-qeL" firstAttribute="top" secondItem="INv-HQ-CM4" secondAttribute="bottom" constant="50" id="GG3-qh-1Nw"/>
+                            <constraint firstItem="qP0-pU-qeL" firstAttribute="leading" secondItem="LyT-TN-l6f" secondAttribute="leadingMargin" constant="20" id="P7e-sQ-j4y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="thirdVCLabel" destination="qP0-pU-qeL" id="ng8-GP-rsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRI-6H-yHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2809" y="195"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Awz-Rk-gd5">

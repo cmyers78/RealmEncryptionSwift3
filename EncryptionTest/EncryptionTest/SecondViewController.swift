@@ -33,5 +33,11 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func buttonTwoTapped(_ sender: UIButton) {
+        
+        encDec2.addMoreToEncrypted(with: "Minecraft with Lily")
+        
+        performSegue(withIdentifier: "thirdVC", sender: nil)
+    }
 
 }

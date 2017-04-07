@@ -17,6 +17,7 @@
 		C6B1C26E1E955CE80067FB4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B1C26D1E955CE80067FB4F /* Main.storyboard */; };
 		C6B1C2701E9564C20067FB4F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B1C26F1E9564C20067FB4F /* SecondViewController.swift */; };
 		C6B7033D1E9538EB00CE24CA /* EncDecEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B7033C1E9538EB00CE24CA /* EncDecEngine.swift */; };
+		C6F4B3BB1E97D65C0086916F /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F4B3BA1E97D65C0086916F /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C6B1C26F1E9564C20067FB4F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C6B7033C1E9538EB00CE24CA /* EncDecEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncDecEngine.swift; sourceTree = "<group>"; };
 		C6C510391DC775FF0047F6BE /* EncryptionTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EncryptionTest.entitlements; sourceTree = "<group>"; };
+		C6F4B3BA1E97D65C0086916F /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		C86A03D8E23180C898427500 /* Pods-EncryptionTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptionTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptionTest/Pods-EncryptionTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				C6C510391DC775FF0047F6BE /* EncryptionTest.entitlements */,
 				C69348681DC7656E00284529 /* AppDelegate.swift */,
 				C693486A1DC7656E00284529 /* ViewController.swift */,
+				C6F4B3BA1E97D65C0086916F /* ThirdViewController.swift */,
 				C6B7033C1E9538EB00CE24CA /* EncDecEngine.swift */,
 				C6B1C26D1E955CE80067FB4F /* Main.storyboard */,
 				C6B1C26F1E9564C20067FB4F /* SecondViewController.swift */,
@@ -235,6 +238,7 @@
 			files = (
 				C6B1C2701E9564C20067FB4F /* SecondViewController.swift in Sources */,
 				C6B7033D1E9538EB00CE24CA /* EncDecEngine.swift in Sources */,
+				C6F4B3BB1E97D65C0086916F /* ThirdViewController.swift in Sources */,
 				C693486B1DC7656E00284529 /* ViewController.swift in Sources */,
 				C69348691DC7656E00284529 /* AppDelegate.swift in Sources */,
 			);

@@ -26,6 +26,17 @@ class EncDecEngine {
         }
     }
     
+    func addMoreToEncrypted(with stringProperty : String) {
+        let configuration = Realm.Configuration(encryptionKey: getKey())
+        let realm = try! Realm(configuration: configuration)
+        
+        if let model = realm.objects(EncryptionObject.self).last {
+            try! realm.write {
+                model.stringProperty = stringProperty
+            }
+        }
+    }
+    
     func decryptedList() -> Results<EncryptionObject> {
         
         let config = Realm.Configuration(encryptionKey: getKey())
