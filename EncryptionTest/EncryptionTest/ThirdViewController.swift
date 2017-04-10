@@ -24,10 +24,17 @@ class ThirdViewController: UIViewController {
         autoreleasepool {
             let allEncObjects = encDec3.decryptedList()
             print(allEncObjects)
+            let dir = getDocumentsDirectory()
+            print(dir)
         }
         
         // Do any additional setup after loading the view.
     }
 
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
 
 }
